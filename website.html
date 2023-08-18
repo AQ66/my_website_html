@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>body{
+        border: solid 5px;
+        color: goldenrod;
+    }
+    </style>
   <title>Dr Anthony Quinn</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,20 +20,23 @@
     .Welcome-1{
         font-family: Raleway;
         width: 600px;
+        color: gold;
     }
     .Bio{
         font-family: Raleway;
         font-size: x-large;
+        color: gold;
     }
     .avatar {
      vertical-align: middle;
      width: 70px;
-    height: 70px;
+     height: 70px;
      border-radius: 50%;
     }
     .Welcome-2{
         font-family: Raleway;
         width:540px;
+        color: white;
     }
         button {
             font-style:italic;
@@ -41,52 +49,57 @@
             padding-left: 10px;
             padding-right: 10px;
         }
-       .X-button {
-            background-color: black;
-            color: whitesmoke;
-        }
-        .X-button:hover{
-            color: yellow;
-        }
-        .RG-button {
-            background-color: whitesmoke;
+        .X-button, 
+        .RG-button, 
+        .WP-button {
+            background-color: yellow;
             color: black;
         }
-        .RG-button:hover{
+        .X-button:hover, 
+        .WP-button:hover, 
+        .WR1-button:hover, 
+        .WR2-button:hover,
+        .RG-button:hover {
             color: goldenrod;
         }
-        .WP-button {
-            background-color: blue;
-            color: whitesmoke;
-        }
-        .WP-button:hover,
-        .WR1-button:hover,
-        .WR2-button:hover {
-            color: yellow;
-        }
-        .WR1-button {
-            background-color: turquoise;
+        .WR1-button, .WR2-button {
+            background-color: yellow;
             color: black;
+
         }
-        .WR2-button {
-            background-color: green;
-            color: whitesmoke;
+        .disclaimer{
+            color: white;
         }
-        .vid-title{
+        .vid-title2{
             font-family: Raleway;
             font-size: x-large;
+            color: white;
+            text-align: center;
         }
-        .video{ 
+        .vid-caption2{
+            font-size: medium;
+            font-family: Raleway;
+            font-style: oblique;
+            text-align: center;
+            color: white;
+        }
+        .vid-title1{
+            font-family: Raleway;
+            font-size: large;
+            color: white;
+        }
+        .video1{ 
           border-radius: 25px;
           cursor: pointer;
-          box-shadow: 5px 5px 5px black;
+          box-shadow: 5px 5px 5px silver;
         }
-        .vid-caption{
+        .vid-caption1{
             width: 600px;
             font-size: medium;
             font-family: Raleway;
             font-style: oblique;
             text-align: center;
+            color: white;
         }
         .Stats{
             background: whitesmoke;
@@ -94,25 +107,24 @@
             border-radius: 12px;
             float: right;
         }
-        .Copyright{
-            text-align: center;
-        }
     </style>
 </head> 
 
   <body>
-    <body style="background-color:rgb(225, 218, 218);">
-
+    <body style="background-color:rgb(17, 16, 16);">
         <div>
             <div class="Banner" style="background-color: black;"> A.A.Q </div>
         </div>
 
     <h1 class="Welcome-1">
-        &#128075 Hi! Welcome to Anthony's website (created using html & CSS)
+        Hi! Welcome to Anthony's website &nbsp; &#127769;
+        (created using html & CSS)
     </h1>
     
     <p class="Bio">
-        I am a postdoctoral researcher currently working in the UK. &#127891&#128506
+        I am a postdoctoral researcher currently working in the UK. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#11088;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &#11088;
+        &#10024; 
     </p>
 
     <img src="Avatar.png" alt="Avatar" class="avatar"> 
@@ -120,7 +132,7 @@
     <a href="mailto:a.quinn@soton.ac.uk">Email me</a>
     <br><br>
     <h2 class="Welcome-2">
-        Here is a pyramid of links to my other websites:
+       <u> Here is a pyramid of links to my other websites: </u>
      </h2>
     <a href="https://twitter.com/2023_aq">
         <button class="X-button"> Click here for X</button>
@@ -142,25 +154,32 @@
         <button class="WR2-button"> Click here for my current research on research culture*</button>
     </a>
     <br>
-    <p>(<u>*currently viewable only on the University of Southampton Sharepoint</u>)
+    <p class="disclaimer"<u>(*viewable only on the University of Southampton Sharepoint</u>)
     </p>
-    <br>
-    <p class="vid-title">
-        This is my (self-selected) video of the month for August: 
+    <br><br>
+    <p class="vid-title2">
+    <u>My 'video of the month</u>' for <strong> September:</strong>
     </p>
-
-<iframe class= "video" width="600" height="400" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="0" allowfullscreen>
+    <iframe class="video2" width="900" height="450" src="https://www.youtube.com/embed/vp20GdQWo3o" frameborder="0" allowfullscreen>
+    </iframe>
+    <p class="vid-caption2">
+        Dr. Anna Lembke on <strong> living in a Dopamine Nation</strong>
+    </p>
+    <br><br>
+    <p class="vid-title1">
+        <u>Previous 'videos of the month':</u>
+    </p>
+    <iframe class= "video1" width="250" height="150" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="0" allowfullscreen>
       </iframe>
-
-<p class="vid-caption">
-    Prof Ashley Whillans describes <strong> 3 rules for better work-life balance</strong>
-<br><br><br>
-<div class="Stats">
-</p>
+    <p class="vid-caption1">
+    <strong>August-</strong> Prof Whillans describes <strong> 3 rules for better work-life balance</strong>
+    <br><br><br>
+    <div class="Stats">
+    </p>
     <article>
         <h2> Website stats</h2> Page completion: 
-        <meter min="0" low="15" high="70" max="100"
-        optimum="100" value="40" > 20%</meter>
+        <meter min="0" low="15" high="60" max="100"
+        optimum="100" value="60" > 20%</meter>
     </article>
     <p> Page views: 
         <!-- hitwebcounter Code START -->
@@ -168,13 +187,11 @@
         <img src="https://hitwebcounter.com/counter/counter.php?page=8684393&style=0006&nbdigits=5&type=page&initCount=0" 
         title="Counter Widget" Alt="Visit counter For Websites"   border="0.5" /></a>  
         <br><br>
-        Page last updated: 02/08/23 
+        Page last updated: 18/08/23 
      </p></div>
      <br><br><br><br><br><br><br><br><br><br>
-     <div class="Copyright"> 
-        &#169Anthony Quinn 2023
     </div>
-  </body> 
-</html>
-<div class="Banner" style="background-color: black;"> A.A.Q 
-</div>
+    </body> 
+    </html>
+    <div class="Banner" style="background-color: black"> A.A.Q 
+    </div>
