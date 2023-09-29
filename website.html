@@ -69,7 +69,20 @@
     font-size: 30x;
     cursor: pointer;
     border-radius: 6px;
+    animation: blink 1s steps(1, end);
+    animation-iteration-count: 4;
     }
+    @keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
     .X-button{
     top: 21%;
     left: 30%;  
@@ -89,6 +102,10 @@
     .WR2-button{
     top: 51.5%;
     left: 30%;
+    }
+    .scorpio{
+        top: 55.5%;
+        left: 25%;
     }
         button {
             font-style:italic;
@@ -141,7 +158,7 @@
     <font size="+3" >(created using html & CSS)</font>
     <p class="Bio"
     style="display:inline-block;">
-    &nbsp; I am a postdoctoral researcher working at the University of Oxford and the University of Southampton. &nbsp;
+    &nbsp; I am a postdoc working at the University of Oxford and the University of Southampton. &nbsp;
     </p> 
     <img src="Avatar.png" alt="Avatar" class="avatar"> 
     &#128231  
@@ -155,7 +172,8 @@
     <div>
     <a href="https://twitter.com/_aq66">
         <button class="X-button"> Click here for X</button>
-    </a></div>
+    </a>
+    </div>
     <div>
     <a href="https://www.researchgate.net/profile/Anthony-Quinn-4">
         <button class="RG-button"> Click here for ResearchGate</button>
@@ -174,16 +192,16 @@
     </a></div></div>
     <p &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</u>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        image credit: Wiki Commons: Vyacheslav Argenberg
+        image credit: Wiki Commons: Vyacheslav Argenberg <p class="scorpio">&#129410;</p> 
     </p>
     <br><br>
     <p class="vid-title2">
-    <u>My 'video of the month</u>' for <strong> September:</strong>
+    <u>My 'video of the month</u>' for <strong> October:</strong>
     </p>
-    <iframe class="video2" width="900" height="450" src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="0" allowfullscreen>
+    <iframe class="video2" width="900" height="450" src="https://www.youtube.com/embed/7BEhGpbc8bg?si=dUKXSc4fWYPMJ3DG" frameborder="0" allowfullscreen>
     </iframe>
     <p class="vid-caption2">
-        Celeste Headlee<strong> on her book "Do Nothing"</strong>
+        <strong> A toolkit for an ECR</strong>
     </p>
     <br><br><br>
 
@@ -199,6 +217,9 @@
           </div>
           <div class="item">
             <iframe width="600" height="300" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe>
+          </div>
+          <div class="item">
+            <iframe width="600" height="300" src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="1" allowfullscreen></iframe>
           </div>
       </div>
 
@@ -222,6 +243,15 @@
 
 <div class="container">
   <h2>Previous videos of the month</h2>
-      </div>
+      </div><br>
+
+      <marquee> No news for the moment.</marquee>
+      <marquee direction="right"
+               behavior="alternate"
+               style="color:white"
+               style="border:BLACK 2px SOLID">
+          Thank you for visiting!
+      </marquee>
+
 <div class="Banner" style="background-color: black"> A.A.Q 
 </div>
