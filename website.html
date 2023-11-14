@@ -60,7 +60,7 @@
         }
         .bg-img {
   background-image: url("cat.jpeg");
-  min-height: 360px;
+  min-height: 350px;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -76,14 +76,14 @@
 .topnav {
   overflow: hidden;
   background-color: #333;
-  width: 666px;
+  width: 720px;
 }
 .topnav a {
   float: center;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
-  font-size: 20px;
+  padding: 16px 18px;
+  font-size: 22px;
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -91,7 +91,8 @@
 }
     </style>
 </head> 
-
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   #demo {
     position: relative;
@@ -99,28 +100,30 @@
     max-width: 500px;
     margin: 15px auto 0 auto;
   }
+  .bg-img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 </style>
+</head>
 
 <body style="background-color:rgb(17, 16, 16);">
-
-<div class="weatherWidget"  style="background-color: gold;height: 180px;"></div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-        <link rel="stylesheet" href="https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.css">
-        <script>
-          window.weatherWidgetConfig =  window.weatherWidgetConfig || [];
-          window.weatherWidgetConfig.push({
-           selector:".weatherWidget",
-           apiKey:"6PC83BNK9KAJB3XXUVHAXT48S",
-           location:"_auto_",
-            unitGroup:"metric"
-           });
-           (function() {
-             var d = document, s = d.createElement('script');
-             s.src = 'https://www.visualcrossing.com/widgets/forecast/weather-forecast-widget-d3.js';
-             s.setAttribute('data-timestamp', +new Date());
-             (d.head || d.body).appendChild(s);
-                        })();
-</script>
+<div class="Banner" style="background-color: black"> A.A.Q 
+</div>
 
     <span class="wave">👋</span> <font size="+3" font color="gold">Welcome to Anthony's website! </font>
     <font size="+3" >(created using: html, CSS, js)</font>
@@ -149,8 +152,7 @@
     </iframe>
     <p class="vid-caption2">
         <strong> Depressive Disorder with Seasonal Pattern</strong>
-    </p>
-    <br><br><br>
+    </p><br><br><br>
 
     <div id="carouselvideo" class="carousel slide" data-interval="false">
         <ol class="carousel-indicators">
@@ -171,7 +173,6 @@
           </div>
       </div>
 
-    <html lang="en">
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -179,11 +180,10 @@
 </head>
 <body>
 
-      <a class="right carousel-control" href="#carouselvideo" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>   
+<a class="right carousel-control" href="#carouselvideo" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+  <span class="sr-only">Next</span>
+  </a></div>   
 
 <div class="container">
   <h2>Previous videos of the month</h2>
@@ -194,8 +194,7 @@
                behavior="alternate"
                style="color:white"
                style="border:BLACK 2px SOLID">
-          Thank you for visiting!
-      </marquee>
+          Thank you for visiting! </marquee>
       
 <div class="Banner" style="background-color: black"> A.A.Q 
 </div>
