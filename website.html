@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>body{
-        border: solid 5px;
-        color: gold;
-    }
-    </style>
   <title>Dr Anthony Quinn</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
 
-  <style>
+<style>
+    body{
+        border: solid 5px;
+        color: white;
+    }
+    body {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+  filter: drop-shadow(0 0 10px white);
+}
+.snow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
     .wave {
   animation-name: wave-animation;  
   animation-duration: 2.5s;        
@@ -38,18 +48,18 @@
     .Bio{
         font-family: Raleway;
         font-size: x-large;
-        color: gold;
+        color: red;
     }
         .vid-title2{
             font-family: Raleway;
             font-size: x-large;
-            color: white;
+            color: red;
             text-align: center;
         }
         .video2 {
         position: relative;
-        right: -250px; 
-        box-shadow: 5px 5px 5px gold;
+        right: -505px; 
+        box-shadow: 5px 5px 5px red;
         }
         .vid-caption2{
             font-size: medium;
@@ -59,41 +69,31 @@
             color: white;
         }
         .bg-img {
-  background-image: url("cat.jpeg");
+  background-image: url("Snow.jpeg");
   min-height: 350px;
-
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
 }
 .container {
   position: center;
   margin: 5px;
-  width: auto;
-  color: gold;
+  color: green;
 }
 .topnav {
-  overflow: hidden;
-  background-color: #333;
-  width: auto;
+  background-color: green;
 }
 .topnav a {
   float: center;
   color: #f2f2f2;
   text-align: center;
-  padding: 16px 18px;
-  font-size: 22px;
+  padding: 14px 16px;
+  font-size: 20px;
 }
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: white;
 }
-    </style>
-</head> 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
   #demo {
     position: relative;
     overflow: hidden;
@@ -119,20 +119,18 @@
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 </style>
-</head>
 
-<body style="background-color:rgb(17, 16, 16);">
-<div class="Banner" style="background-color: black"> A.A.Q 
+<body>
+<div class="Banner" style="background-color: transparent"> A.A.Q 
 </div>
-
-    <span class="wave">👋</span> <font size="+3" font color="gold">Welcome to Anthony's website! </font>
-    <font size="+3" >(created using: html, CSS, js)</font>
+    <center> 
+    <span class="wave">🌲</span> <font size="+3" font color="green">Welcome to Anthony's website!</font>
+    <font size="+3" >(created using: html, CSS, js)&#10052;</font>
     <p class="Bio"
     style="display:inline-block;">
-    &nbsp; I am a postdoc working at the University of Oxford and the University of Southampton. &nbsp;
-    </p> 
+    &nbsp; postdoc working at the University of Oxford and the University of Southampton &nbsp;
+    </p></center>
 
-    <hr>
     <div class="bg-img">
       <div class="container">
         <div class="topnav">
@@ -140,19 +138,18 @@
           <a href="https://www.researchgate.net/profile/Anthony-Quinn-4">ResearchGate</a>
           <a href="mailto:a.quinn@soton.ac.uk">Email</a>
           <a href="https://twitter.com/_aq66">My X</a>
+          <a href="https://www.bbc.co.uk/weather">&nbsp &#10052</a>
         </div>
       </div>
-    </div>
-    <hr><br>
+    </div><br>
 
     <p class="vid-title2">
-    <u>My 'video of the month</u>' for <strong> November:</strong>
+    My 'video of the month':
     </p>
-    <iframe class="video2" width="900" height="450" src="https://www.youtube.com/embed/sAqpWWgIehQ?si=04YpFWJVuS1DlNAD" frameborder="0" allowfullscreen>
+    <iframe class="video2" width="400" height="200" src="https://www.youtube.com/embed/sAqpWWgIehQ?si=04YpFWJVuS1DlNAD" frameborder="0" allowfullscreen>
     </iframe>
     <p class="vid-caption2">
-        <strong> Depressive Disorder with Seasonal Pattern</strong>
-    </p><br><br><br>
+        <strong> Depressive Disorder with Seasonal Pattern</strong></p>
 
     <div id="carouselvideo" class="carousel slide" data-interval="false">
         <ol class="carousel-indicators">
@@ -188,11 +185,11 @@
 
 <div class="container">
   <h2>Previous videos of the month</h2>
-      </div><br>
+      </div><br><br>
 
 <marquee direction="right"
   behavior="alternate"
-  style="color:white"
+  style="color:black"
   style="border:BLACK 2px SOLID">
   Thank you for visiting! </marquee>
 
@@ -206,5 +203,4 @@
   <div id="containerT">
   <p id="clock"></p>
   </div>
-          </body>
-<div class="Banner" style="background-color: black"> A.A.Q </div>
+<div class="Banner" style="background-color: black"> A.A.Q </div></body>
