@@ -1,13 +1,13 @@
 #containerT{
-  min-height: 9px;
+  min-height: 4px;
   position: relative;
 }
 #clock{
   text-align: center;
-  font-size:17px;
-  background-color: black;
-  color: gold;
+  font-size:15px;
+  background-color: transparent;
+  color: white;
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
 }
