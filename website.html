@@ -33,6 +33,11 @@
         font-size: x-large;
         color: red;
     }
+    .Anthony{
+      width: 100px;
+      height: 100px;
+      clip-path: circle();
+    }
         .vid-title2{
             font-family: Raleway;
             font-size: x-large;
@@ -41,7 +46,7 @@
         }
         .video2 {
         position: relative;
-        right: -505px; 
+        right: -500px; 
         box-shadow: 5px 5px 5px red;
         }
         .vid-caption2{
@@ -49,7 +54,7 @@
             font-family: Raleway;
             font-style: oblique;
             text-align: center;
-            color: white;
+            color: black;
         }
         .bg-img {
   background-image: url("Snow.jpeg");
@@ -58,6 +63,13 @@
   min-height: 300px;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+}
+.yt-vid {
+  border-radius: 100px;
+  border: 1px dotted red;
+  min-height: 300px;
+  background-position: center;
   position: relative;
 }
 .topnav {
@@ -169,11 +181,12 @@ color: green;
 
     <center> 
     <span class="wave">🌲</span> <font size="+3" font color="green">Welcome to Anthony's website!</font>
-    <font size="+3" >(created using: html, CSS, js)&#129482;</font>
+    <font size="+3" >(created using: html, CSS, js)</font><br>
     <p class="Bio"
     style="display:inline-block;">
     &nbsp; postdoc working at the University of Oxford and the University of Southampton &nbsp;
-    </p></center>
+    </p><img src="img.png" class="Anthony" alt="Anthony"></center>
+    
 
     <div class="bg-img">
       <div class="container">
@@ -184,15 +197,15 @@ color: green;
           <a href="https://twitter.com/_aq66">My X</a>
           <a href="https://www.bbc.co.uk/weather">&nbsp &#10052</a>
         </div></div>
-    </div><br>
+    </div><br><br>
 
+    <div class="yt-vid">
     <p class="vid-title2">
     My 'video of the month' for December:
     </p>
-    <iframe class="video2" width="500" height="250" src="https://www.youtube.com/embed/sAqpWWgIehQ?si=04YpFWJVuS1DlNAD" frameborder="0" allowfullscreen>
-    </iframe>
+    <iframe class="video2" width="600" height="300" src="https://www.youtube.com/embed/sAqpWWgIehQ?si=04YpFWJVuS1DlNAD" frameborder="0" allowfullscreen></iframe>
     <p class="vid-caption2">
-        <strong> Depressive Disorder with Seasonal Pattern</strong></p><br><br><br>
+        <strong> Depressive Disorder with Seasonal Pattern</strong></p></div><br><br><br>
 
     <div id="carouselvideo" class="carousel slide" data-interval="false">
         <ol class="carousel-indicators">
@@ -203,13 +216,13 @@ color: green;
       
         <div class="carousel-inner" data-interval="false">
           <div class="item active" data>
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/vp20GdQWo3o" frameborder="1" allowfullscreen></iframe>
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/vp20GdQWo3o" frameborder="1" allowfullscreen></iframe>
           </div>
           <div class="item">
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe>
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe>
           </div>
           <div class="item">
-            <iframe width="400" height="200" src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="1" allowfullscreen></iframe>
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="1" allowfullscreen></iframe>
           </div></div>
 
 <head>
@@ -229,6 +242,7 @@ color: green;
   <h2>Previous videos of the month</h2>
       </div><br><br>
 
+<hr>
 <marquee direction="right"
   behavior="alternate"
   style="color:black"
