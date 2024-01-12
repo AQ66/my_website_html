@@ -108,13 +108,31 @@ color: red;
 }
 header {
   background-color: skyblue;
-  padding: 24px;
-  border-radius: 12px;
+  padding: 20px;
+  border-radius: 10px;
 }
 footer {
   background-color: limegreen;
-  padding: 24px;
+  padding: 4px;
   border-radius: 2px;
+}
+.talkbubble{
+font-family: 'Raleway', sans-serif;
+color: black;
+width: 250px; 
+border-radius: 10px;
+background-color: black; 
+padding: 10px;
+box-shadow: 2px 2px 2px red;
+}
+img {
+  width: 280px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: .5s;
+}
+img:hover {
+  transform: scale(1.5);
 }
 </style>
 
@@ -171,7 +189,11 @@ footer {
           <a href="mailto:a.quinn@soton.ac.uk">Email &#128231;</a>
           <a href="https://twitter.com/_aq66">My X &#10060;</a>
           <a href="https://www.bbc.co.uk/weather">The tar and feather &#10052</a>
-        </div></div><br>
+        </div></div></div><br>
+
+      <center> <div class="talkbubble">
+          <textarea>“One day, you will wake up and there won't be any more time to do the thing you've always wanted. Do it now.” – Paulo Coelho </textarea>
+        </div></center><br><br>
 
     <div class="yt-vid">
     <p class="vid-title2">
@@ -179,7 +201,7 @@ footer {
     </p><center>
     <iframe class="video2" width="600" height="300" src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" title=" frameborder="0" allowfullscreen></iframe>
     <p class="vid-caption2">
-        <strong>Why do you feel sleepy in winter?</strong></p></div></center><br>
+        <strong>Why do I feel sleepy in?</strong></p></div></center><br>
 
     <div id="carouselvideo" class="carousel slide" data-interval="false">
         <ol class="carousel-indicators">
@@ -218,14 +240,6 @@ footer {
 
   <h2>Previous videos of the month</h2>
       </div>
-
-      <hr size="13">
-      <footer>
-      <marquee direction="right"
-  behavior="alternate"
-  style="color:black"
-  style="border:BLACK 2px SOLID">
-  Thank you for visiting! </marquee></footer>
 
 <meta charset="utf-8">
   <title>Digital Clock</title>
