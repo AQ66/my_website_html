@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <title>&#128522 Dr Anthony Quinn</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,7 +66,7 @@
   position: relative;
 }
 .topnav {
-  background-color: silver;
+  background-color: black;
   padding: 4px;
   border-radius: 4px;
 }
@@ -103,11 +104,8 @@
 font-family: 'Raleway', sans-serif;
 color: #000;		
 }
-.glyphicon-chevron-right{
-color: red;
-}
 header {
-  background-color: skyblue;
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
 }
@@ -133,6 +131,19 @@ img {
 }
 img:hover {
   transform: scale(1.5);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px;
+  background-color: black;
+  padding: 6px;
+}
+
+.grid-container > div {
+  background-color: white;
+  border: 2px solid red;
+  text-align: center;
 }
 </style>
 
@@ -188,12 +199,7 @@ img:hover {
           <a href="https://www.researchgate.net/profile/Anthony-Quinn-4">ResearchGate &#128218;</a>
           <a href="mailto:a.quinn@soton.ac.uk">Email &#128231;</a>
           <a href="https://twitter.com/_aq66">My X &#10060;</a>
-          <a href="https://www.bbc.co.uk/weather">The tar and feather &#10052</a>
         </div></div></div><br>
-
-      <center> <div class="talkbubble">
-          <textarea>“One day, you will wake up and there won't be any more time to do the thing you've always wanted. Do it now.” – Paulo Coelho </textarea>
-        </div></center><br><br>
 
     <div class="yt-vid">
     <p class="vid-title2">
@@ -201,29 +207,19 @@ img:hover {
     </p><center>
     <iframe class="video2" width="600" height="300" src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" title=" frameborder="0" allowfullscreen></iframe>
     <p class="vid-caption2">
-        <strong>Why do I feel sleepy in?</strong></p></div></center><br>
+        <strong>Why do I feel sleepy in winter??</strong></p></div></center>
 
-    <div id="carouselvideo" class="carousel slide" data-interval="false">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselvideo" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselvideo" data-slide-to="1"></li>
-          <li data-target="#carouselvideo" data-slide-to="2"></li>
-          <li data-target="#carouselvideo" data-slide-to="3"></li>
-        </ol>
-      
-        <div class="carousel-inner" data-interval="false">
-          <div class="item active" data>
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/vp20GdQWo3o" frameborder="1" allowfullscreen></iframe>
-          </div>
+        <h1>Previous videos of the month:</h1>
+        <div class="grid-container">
           <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe>
-          </div>
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/vp20GdQWo3o" frameborder="1" allowfullscreen></iframe></div>
           <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="1" allowfullscreen></iframe>
-          </div>
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe></div>
           <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/sAqpWWgIehQ?si=04YpFWJVuS1DlNAD" frameborder="1" allowfullscreen></iframe>
-          </div></div>
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="1" allowfullscreen></iframe></div>  
+          <div class="item">
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/sAqpWWgIehQ?si=04YpFWJVuS1DlNAD" frameborder="1" allowfullscreen></iframe></div>
+        </div>
 
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -232,14 +228,6 @@ img:hover {
   <script>window.google={kEI:"Quz2S63qIYeglAfw8oHGCg",kEXPI:"17259,23663,24477,24661,24745,24770,24808",kCSI:{e:"17259,23663,24477,24661,24745,24770,24808",ei:"Quz2S63qIYeglAfw8oHGCg",expi:"17259,23663,24477,24661,24745,24770,24808"},ml:function(){},pageState:"#",kHL:"en",time:function(){return(new Date).getTime()},log:function(b,d,c){var a=new Image,e=google,g=e.lc,f=e.li;a.onerror=(a.onload=(a.onabort=function(){delete g[f]}));g[f]=a;c=c||"/gen_204?atyp=i&ct="+b+"&cad="+d+"&zx="+google.time();a.src=c;e.li=f+1},lc:[],li:0,j:{en:1,l:function(){},e:function(){},b:location.hash&&location.hash!="#",bv:3,pl:[],mc:0,sc:0.5},Toolbelt:{}};(function(){for(var d=0,c;c=["ad","bc","p","pa","zd","ac","pc","pah","ph","sa","xx","zc","zz"][d++];)(function(a){google.j[a]=function(){google.j.pl.push([a,arguments])}})(c)})();
     window.google.sn="webhp";window.google.timers={load:{t:{start:(new Date).getTime()}}};try{window.google.pt=window.gtbExternal&&window.gtbExternal.pageT();}catch(u){}window.google.jsrt_kill=1;
     </script>
-  
-<a class="right carousel-control" href="#carouselvideo" data-slide="next">
-  <span class="glyphicon glyphicon-chevron-right"></span>
-  <span class="sr-only">Next</span>
-  </a></div>   
-
-  <h2>Previous videos of the month</h2>
-      </div>
 
 <meta charset="utf-8">
   <title>Digital Clock</title>
