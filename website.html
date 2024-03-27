@@ -61,6 +61,7 @@
   background-color: black;
   padding: 5px;
   border-radius: 5px;
+  box-shadow: inset 0 0 13px #ff0000;
 }
 .topnav a {
   float: center;
@@ -142,6 +143,26 @@ img:hover {
   75%  {background-color:yellow}
   100% {background-color:goldenrod}
 }
+.collapsible {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+  background-color: red;
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
 </style>
 
 <body>
@@ -167,7 +188,7 @@ img:hover {
     <p class="vid-caption2">
         <strong>The 6 Habits of Exceptionally Creative People</strong></p></div></center>
 
-        &nbsp;<h1>Previous videos of the month:</h1>
+        <center>&nbsp;<h1>Previous videos of the month:</h1></center>
         <div class="grid-container">
           <div class="item">
             <iframe width="500" height="250" src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="1" allowfullscreen></iframe></div>
@@ -181,12 +202,33 @@ img:hover {
             <iframe width="500" height="250" src="https://www.youtube.com/embed/sAqpWWgIehQ?si=04YpFWJVuS1DlNAD" frameborder="1" allowfullscreen></iframe></div>
         </div>
 
-        <center>&nbsp;<u><h1>In other news</u><div class="badge" New style="background-color: goldenrod">New </div></h1></center>
-        <center>&nbsp;<h2><strong>Here is a list of countries that I have visited to date&#128522;:</strong></p></div></center></h2>
-        <center>&nbsp;Antigua🇦🇬, Australia🇦🇺, Austria🇦🇹, Belgium🇧🇪, Bermuda🇧🇲, Bolivia🇧🇴, Bosnia & Herzegovina🇧🇦, Bulgaria🇧🇬, Croatia 🇭🇷,<br>
-        &nbsp;Cuba🇨🇺, Cyprus🇨🇾, Czech Republic🇨🇿, Denmark🇩🇰, France🇫🇷, Germany🇩🇪, Greece🇬🇷, Hong Kong🇭🇰, Hungary🇭🇺, Ireland🇮🇪,<br>
-        &nbsp;Italy🇮🇪, Malaysia🇲🇾, Mauritius🇲🇺, Mexico🇲🇽, Monaco🇲🇨, Netherlands🇳🇱, Northern Ireland, Poland🇵🇱, Portugal🇵🇹, Scotland🏴󠁧󠁢󠁳󠁣󠁴󠁿,<br> 
-        &nbsp;Spain🇪🇦, Sweden🇸🇪, Switzerland🇨🇭, Turkey🇹🇷, USA🇺🇸, Vatican City🇻🇦, Wales🏴󠁧󠁢󠁷󠁬󠁳󠁿</center><br>
+       
+        <br><button type="button" class="collapsible"><h2><center><u>In other news... (click here)</u></center></h2></button>
+        <div class="content">
+        <p>
+        <center>&nbsp;<h2><strong>Here is a list of countries that I have visited&#128522;:<br><br>
+        <center>&nbsp;Antigua🇦🇬, Australia🇦🇺, Austria🇦🇹, Belgium🇧🇪, Bermuda🇧🇲, Bolivia🇧🇴, Bosnia & Herzegovina🇧🇦, Bulgaria🇧🇬, Croatia🇭🇷,
+            &nbsp;Cuba🇨🇺, Cyprus🇨🇾, Czech Republic🇨🇿, Denmark🇩🇰, France🇫🇷, Germany🇩🇪, Greece🇬🇷, Hong Kong🇭🇰, Hungary🇭🇺, Ireland🇮🇪,
+            &nbsp;Italy🇮🇪, Malaysia🇲🇾, Mauritius🇲🇺, Mexico🇲🇽, Monaco🇲🇨, Netherlands🇳🇱, Northern Ireland, Poland🇵🇱, Portugal🇵🇹, Scotland🏴󠁧󠁢󠁳󠁣󠁴󠁿, 
+            &nbsp;Spain🇪🇦, Sweden🇸🇪, Switzerland🇨🇭, Turkey🇹🇷, USA🇺🇸, Vatican City🇻🇦, Wales🏴󠁧󠁢󠁷󠁬󠁳󠁿
+        </strong></p></div>
+        
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+          </script>
 
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
