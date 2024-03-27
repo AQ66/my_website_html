@@ -125,23 +125,11 @@ img:hover {
   background-color: black;
   padding: 6px;
 }
-
 .grid-container > div {
-  background-color: white;
-  border: 2px solid red;
+  background-color: black;
+  border: 2px solid black;
   text-align: center;
-}
-.badge{
-  animation-name: example;
-  animation-duration: 9s;
-  animation-iteration-count: 9;
-}
-@keyframes example {
-  0%   {background-color:goldenrod}
-  25%  {background-color:yellow}
-  50%  {background-color:red}
-  75%  {background-color:yellow}
-  100% {background-color:goldenrod}
+  box-shadow: 5px 5px 5px red;
 }
 .collapsible {
   background-color: white;
@@ -153,9 +141,11 @@ img:hover {
   text-align: left;
   outline: none;
   font-size: 15px;
+  box-shadow: 5px 5px 5px red;
 }
 .active, .collapsible:hover {
-  background-color: red;
+  background-color: black;
+  color: white;
 }
 .content {
   padding: 0 18px;
@@ -204,8 +194,7 @@ img:hover {
 
        
         <br><button type="button" class="collapsible"><h2><center><u>In other news... (click here)</u></center></h2></button>
-        <div class="content">
-        <p>
+        <div class="content"><p>
         <center>&nbsp;<h2><strong>Here is a list of countries that I have visited&#128522;:<br><br>
         <center>&nbsp;Antigua🇦🇬, Australia🇦🇺, Austria🇦🇹, Belgium🇧🇪, Bermuda🇧🇲, Bolivia🇧🇴, Bosnia & Herzegovina🇧🇦, Bulgaria🇧🇬, Croatia🇭🇷,
             &nbsp;Cuba🇨🇺, Cyprus🇨🇾, Czech Republic🇨🇿, Denmark🇩🇰, France🇫🇷, Germany🇩🇪, Greece🇬🇷, Hong Kong🇭🇰, Hungary🇭🇺, Ireland🇮🇪,
