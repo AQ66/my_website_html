@@ -35,36 +35,44 @@ body {
   --color2: 76;
   --delay: 0ms;
   background-color: hsl(var(--color1), 100%, 60%);
-  animation: colorChange 3000ms ease var(--delay) infinite both;
+  animation: colorChange 10000ms ease var(--delay) infinite;
   
-  &:nth-child(4n - 2) {
-    --delay: 1000ms;
-  }
-  
-  &:nth-child(4n) {
+  &:nth-child(1n) {
     --delay: 2000ms;
+  }
+  &:nth-child(2n) {
+    --delay: 4000ms;
+  }
+  &:nth-child(3n) {
+    --delay: 6000ms;
+  }
+  &:nth-child(4n) {
+    --delay: 8000ms;
+  }
+  &:nth-child(5n) {
+    --delay: 10000ms;
   }
 }
 
 @keyframes colorChange {
   0% {
-    background-color: hsl(36, 100%, 64%);
+    background-color: hwb(45 93% 5%);
   }
   
   25% {
-    background-color: hsl(76, 100%, 64%);
+    background-color: hwb(64 0% 1%);
   }
     
   50% {
-    background-color: hsl(206, 100%, 64%);
+    background-color: hwb(200 97% 2%);
   }
   
   75% {
-    background-color: hsl(305, 100%, 64%);
+    background-color: hwb(300 95% 2%);
   }
   
   100% {
-    background-color: hsl(36, 100%, 64%);
+    background-color: hwb(34 94% 4%);
   }
 }
 
