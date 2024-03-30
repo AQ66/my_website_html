@@ -52,6 +52,9 @@ body {
   &:nth-child(5n) {
     --delay: 10000ms;
   }
+  &:nth-child(6n) {
+    --delay: 12000ms;
+  }
 }
 
 @keyframes colorChange {
