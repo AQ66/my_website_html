@@ -60,7 +60,6 @@
   padding: 5px;
   border-radius: 5px;
   box-shadow: inset 0 0 13px #ff0000;
-  overflow: hidden;
   text-align: center;
   max-width: auto;
 }
@@ -69,7 +68,7 @@
   color: #f2f2f2;
   text-align: center;
   padding: 15px 20px;
-  font-size: 23px;
+  font-size: 24px;
   overflow: hidden;
 }
 .topnav a:hover {
@@ -141,15 +140,32 @@ img:hover {
 .new{
 background-color: #fbe922;
 }
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG.jpeg");
+  height: 45%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; 
+}
+.caption{
+  text-align: right;
+}
 </style>
 
 <body>
 <div class="Banner" style="background-color: black"> A.A.Q </div>
-    <header><center> 
+   
+<div class="hero-image">
+  <div class="caption">
+    <a style="color:goldenrod;" href="https://en.wikipedia.org/wiki/Segovia">Segovia, Spain [image my own] &nbsp;</a>
+    </div></div>
+
+<header><center> 
+
     <span class="wave">&#128075</span> <font size="+3">Welcome to Anthony's website!</font>
     <p class="Bio"
     style="display:inline-block;">
-    &nbsp; I am working at the University of Oxford &nbsp;
     </p><img src="img.png" class="Anthony" alt="Anthony"></center></header>
     
       <div class="container">
@@ -157,9 +173,10 @@ background-color: #fbe922;
           <a href="mailto:anthony.quinn@psych.ox.ac.uk">Email &#128231;</a>
           <a href="https://twitter.com/_aq66">My X &#10060;</a>
           <a href="https://www.researchgate.net/profile/Anthony-Quinn-4">ResearchGate &#128218;</a>
+          <a href="https://www.psych.ox.ac.uk/team/anthony-quinn">Institutional Profile &#128100;</a>
           <a href="https://www.linkedin.com/in/anthony-quinn-24523329a/">LinkedIn &#9939; &nbsp; 
             <i> <span style="color:black;" class="label new">New</span></i></a>
-        </div></div></div><br>
+        </div></div></div><br><br>
 
     <center><h1>My video of the month:</center></h1><center>
     <iframe class="video2" width="666" height="333" src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" title=" frameborder="0" allowfullscreen></iframe>
@@ -193,8 +210,6 @@ background-color: #fbe922;
   <link rel="stylesheet" href="website.css">
   <script src="website.js"></script>
 
-<body>
   <div id="containerT">
-  <p id="clock"></p>
-  </div>
-<div class="Banner" style="background-color: black"> A.A.Q </div></body>
+  <p id="clock"></p></div>
+<div class="Banner" style="background-color: black"> A.A.Q </div>
