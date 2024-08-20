@@ -4,6 +4,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
     .wave {
   animation-name: wave-animation;  
@@ -122,10 +124,10 @@ img:hover {
   padding: 6px;
 }
 .grid-container > div {
-  background-color: black;
+  background-color: white;
   border: 2px solid black;
   text-align: center;
-  box-shadow: 5px 5px 5px red;
+  box-shadow: 5px 5px 5px black;
 }
 .content {
   padding: 0 18px;
@@ -137,12 +139,9 @@ img:hover {
   font-family: Arial;
   box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
 }
-.new{
-background-color: #fbe922;
-}
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG.jpeg");
-  height: 45%;
+  height: 40%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,6 +150,39 @@ background-color: #fbe922;
 .caption{
   text-align: right;
 }
+#containerT{
+  min-height: 4px;
+  position: relative;
+}
+#clock{
+  text-align: center;
+  font-size:15px;
+  background-color: transparent;
+  color: white;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: solid;
+  text-align: center;
+  font-size: 18px;
+  transition: 0.6s;
+}
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
 </style>
 
 <body>
@@ -158,8 +190,7 @@ background-color: #fbe922;
    
 <div class="hero-image">
   <div class="caption">
-    <a style="color:goldenrod;" href="https://en.wikipedia.org/wiki/Segovia">Segovia, Spain [image my own] &nbsp;</a>
-    </div></div>
+    <a style="color:goldenrod;" href="https://en.wikipedia.org/wiki/Segovia">Segovia, Spain [image my own] &nbsp;</a></div></div>
 
 <header><center> 
 
@@ -174,16 +205,19 @@ background-color: #fbe922;
           <a href="https://twitter.com/_aq66">My X &#10060;</a>
           <a href="https://www.researchgate.net/profile/Anthony-Quinn-4">ResearchGate &#128218;</a>
           <a href="https://www.psych.ox.ac.uk/team/anthony-quinn">Institutional Profile &#128100;</a>
-          <a href="https://www.linkedin.com/in/anthony-quinn-24523329a/">LinkedIn &#9939; &nbsp; 
-            <i> <span style="color:black;" class="label new">New</span></i></a>
+          <a href="https://www.linkedin.com/in/anthony-quinn-24523329a/">LinkedIn &#9939; &nbsp;</a>
         </div></div></div><br><br>
 
-    <center><h1>My video of the month:</center></h1><center>
-    <iframe class="video2" width="666" height="333" src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" title=" frameborder="0" allowfullscreen></iframe>
-    <p class="vid-caption2">
-       <strong>The gut microbiome</strong></p></div></center>
+        <button class="accordion">Click for my video of the month &#8595;</button>
+<div class="panel">
 
-        <center>&nbsp;<h1>Previous videos of the month:</h1></center>
+        <center><iframe class="video2" width="666" height="333" src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" title=" frameborder="0" allowfullscreen></iframe>
+        <p class="vid-caption2">
+       <strong>The gut microbiome</strong></p></div></center></div>
+
+       <button class="accordion">Click for my previous videos of the month &#8595;</button>
+<div class="panel">
+
         <div class="grid-container">
           <div class="item">
             <iframe width="500" height="250" src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" frameborder="1" allowfullscreen></iframe></div>
@@ -196,9 +230,8 @@ background-color: #fbe922;
           <div class="item">
             <iframe width="500" height="250" src="https://www.youtube.com/embed/ha1ZbJIW1f8?si=GahEw0RweQdz5lMQ" frameborder="1" allowfullscreen></iframe></div>
             <div class="item">
-              <iframe width="500" height="250" src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="1" allowfullscreen></iframe></div>
-        </div><br>
-      
+              <iframe width="500" height="250" src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="1" allowfullscreen></iframe></div></div></div>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -213,3 +246,20 @@ background-color: #fbe922;
   <div id="containerT">
   <p id="clock"></p></div>
 <div class="Banner" style="background-color: black"> A.A.Q </div>
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
