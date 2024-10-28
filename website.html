@@ -40,28 +40,13 @@
       clip-path: circle();
     }
         .video2 {
-        box-shadow: 3px 3px 3px red;
-        }
-        .vid-caption2{
-            font-size: medium;
-            font-family: Raleway;
-            font-style: oblique;
-            text-align: center;
-            color: black;
-        }
-.yt-vid {
-  border-radius: 100px;
-  background-color: white;
-  border-radius: 12px;
-  min-height: 300px;
-  background-position: center;
-  position: relative;
+        position: relative; 
 }
 .topnav {
   background-color: black;
   padding: 5px;
   border-radius: 5px;
-  box-shadow: inset 0 0 13px #ff0000;
+  box-shadow: inset 0 0 13px;
   text-align: center;
   max-width: auto;
 }
@@ -106,7 +91,7 @@ width: 250px;
 border-radius: 10px;
 background-color: black; 
 padding: 10px;
-box-shadow: 2px 2px 2px red;
+box-shadow: 2px 2px 2px;
 }
 img {
   width: 100px;
@@ -135,20 +120,14 @@ img:hover {
   overflow: hidden;
   background-color: #f1f1f1;
 }
-.label {
-  font-family: Arial;
-  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
-}
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("IMG.jpeg");
-  height: 40%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cine.jpg");
+  height: 65%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative; 
-}
-.caption{
-  text-align: right;
+  clip-path: circle(50% at 50% 50%);
 }
 #containerT{
   min-height: 4px;
@@ -164,15 +143,14 @@ img:hover {
   left: 50%;
 }
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: black;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: solid;
   text-align: center;
   font-size: 18px;
-  transition: 0.6s;
+  transition: 0.5s;
 }
 .active, .accordion:hover {
   background-color: #ccc; 
@@ -188,13 +166,7 @@ img:hover {
 <body>
 <div class="Banner" style="background-color: black"> A.A.Q </div>
    
-<div class="hero-image">
-  <div class="caption">
-    <a style="color:goldenrod;" href="https://en.wikipedia.org/wiki/Segovia">Segovia, Spain [image my own] &nbsp;</a></div></div>
-
-<header><center> 
-
-    <span class="wave">&#128075</span> <font size="+3">Welcome to Anthony's website!</font>
+<header><center><span class="wave">&#128075</span> <font size="+3">Welcome to Anthony's website!</font>
     <p class="Bio"
     style="display:inline-block;">
     </p><img src="img.png" class="Anthony" alt="Anthony"></center></header>
@@ -206,23 +178,22 @@ img:hover {
           <a href="https://www.researchgate.net/profile/Anthony-Quinn-4">ResearchGate &#128218;</a>
           <a href="https://www.psych.ox.ac.uk/team/anthony-quinn">Institutional Profile &#128100;</a>
           <a href="https://www.linkedin.com/in/anthony-quinn-24523329a/">LinkedIn &#9939; &nbsp;</a>
-        </div></div></div><br><br>
+        </div></div></div><br>
 
-        <button class="accordion">Click for my video of the month &#8595;</button>
-<div class="panel">
+        <center><font size="+2">This is my video of the month:</font></center><br>
+        <div class="hero-image"><br>
+          <center><iframe class="video2" width="710" height="295" src="https://www.youtube.com/embed/PYJ22-YYNW8?si=hBlCFUjh90azeZXv" 
+            style="padding:6px;border:1px;"
+            allowfullscreen></iframe></div>
 
-        <center><iframe class="video2" width="666" height="333" src="https://www.youtube.com/embed/o3eWeYKED78?si=9RYQRRCxsqT9gW4R" title=" frameborder="0" allowfullscreen></iframe>
-        <p class="vid-caption2">
-       <strong>What happens when join a BioResource?</strong></p></div></center></div>
-
-       <button class="accordion">Click for my previous videos of the month &#8595;</button>
+       <button class="accordion">Shhh! &#129323; (you can click here for my previous videos of the month) &#8595;</button>
 <div class="panel">
 
         <div class="grid-container">
           <div class="item">
             <iframe width="500" height="250" src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" frameborder="1" allowfullscreen></iframe></div>
           <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/vp20GdQWo3o" frameborder="1" allowfullscreen></iframe></div>
+            <iframe width="500" height="250" src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="1" allowfullscreen></iframe></div>
           <div class="item">
             <iframe width="500" height="250" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe></div>
           <div class="item">
@@ -230,9 +201,10 @@ img:hover {
           <div class="item">
             <iframe width="500" height="250" src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" frameborder="1" allowfullscreen></iframe></div>
             <div class="item">
-              <iframe width="500" height="250" src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="1" allowfullscreen></iframe></div></div></div>
+              <iframe width="500" height="250" src="https://www.youtube.com/embed/o3eWeYKED78?si=9RYQRRCxsqT9gW4R" frameborder="1" allowfullscreen></iframe></div></div></div>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script>window.google={kEI:"Quz2S63qIYeglAfw8oHGCg",kEXPI:"17259,23663,24477,24661,24745,24770,24808",kCSI:{e:"17259,23663,24477,24661,24745,24770,24808",ei:"Quz2S63qIYeglAfw8oHGCg",expi:"17259,23663,24477,24661,24745,24770,24808"},ml:function(){},pageState:"#",kHL:"en",time:function(){return(new Date).getTime()},log:function(b,d,c){var a=new Image,e=google,g=e.lc,f=e.li;a.onerror=(a.onload=(a.onabort=function(){delete g[f]}));g[f]=a;c=c||"/gen_204?atyp=i&ct="+b+"&cad="+d+"&zx="+google.time();a.src=c;e.li=f+1},lc:[],li:0,j:{en:1,l:function(){},e:function(){},b:location.hash&&location.hash!="#",bv:3,pl:[],mc:0,sc:0.5},Toolbelt:{}};(function(){for(var d=0,c;c=["ad","bc","p","pa","zd","ac","pc","pah","ph","sa","xx","zc","zz"][d++];)(function(a){google.j[a]=function(){google.j.pl.push([a,arguments])}})(c)})();
