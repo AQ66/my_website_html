@@ -1,238 +1,191 @@
-<html>
-  <title>&#128522 Dr Anthony Quinn</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>&#128522 Dr Anthony Quinn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+        }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        .wave {
+            animation-name: wave-animation;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+            transform-origin: 70% 70%;
+            display: inline-block;
+            font-size: 66px;
+        }
 
-<style>
-    .wave {
-  animation-name: wave-animation;  
-  animation-duration: 2.5s;        
-  animation-iteration-count: infinite;  
-  transform-origin: 70% 70%;       
-  display: inline-block;
-  font-size: 66px;
-}
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  
-  100% { transform: rotate( 0.0deg) }
-}
-    .Banner{
-        color: white;
-        text-align: right;
-    }
-    .Bio{
-        font-family: Raleway;
-        font-size: x-large;
-        color: red;
-    }
-    @media(max-width: 600px){
-    .Anthony{
-      width: 100px;
-      height: 100px;
-      clip-path: circle();
-    }
+        @keyframes wave-animation {
+            0%, 100% { transform: rotate(0.0deg); }
+            10% { transform: rotate(14.0deg); }
+            20% { transform: rotate(-8.0deg); }
+            30% { transform: rotate(14.0deg); }
+            40% { transform: rotate(-4.0deg); }
+            50% { transform: rotate(10.0deg); }
+            60% { transform: rotate(0.0deg); }
+        }
+
+        .Banner {
+            color: white;
+            text-align: center;
+            background-color: black;
+            padding: 10px 0;
+        }
+
+        .Bio {
+            font-size: 1.5em;
+            color: red;
+        }
+
+        .Anthony {
+            width: 100px;
+            height: 100px;
+            clip-path: circle();
+        }
+
         .video2 {
-        position: relative; 
-}
-.topnav {
-  background-color: black;
-  padding: 5px;
-  border-radius: 5px;
-  box-shadow: inset 0 0 13px;
-  text-align: center;
-  max-width: auto;
-}
-.topnav a {
-  float: center;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 15px 20px;
-  font-size: 25px;
-  overflow: hidden;
-}
-.topnav a:hover {
-  background-color: #ddd;
-  color: white;
-}
-.demo {
-  font-family: 'Raleway', sans-serif;
-	color:#fff;
-    display: block;
-    margin: 0 auto;
-    padding: 15px 0;
-    text-align: center;
-}
-.demo a{
-font-family: 'Raleway', sans-serif;
-color: #000;		
-}
-header {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-}
-footer {
-  background-color: limegreen;
-  padding: 4px;
-  border-radius: 2px;
-}
-.talkbubble{
-font-family: 'Raleway', sans-serif;
-color: black;
-width: 250px; 
-border-radius: 10px;
-background-color: black; 
-padding: 10px;
-box-shadow: 2px 2px 2px;
-}
-img {
-  width: 100px;
-  cursor: pointer;
-  transition: .5s;
-}
-img:hover {
-  transform: scale(1.5);
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 6px;
-  background-color: black;
-  padding: 6px;
-}
-.grid-container > div {
-  background-color: white;
-  border: 2px solid black;
-  text-align: center;
-  box-shadow: 5px 5px 5px black;
-}
-.content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
-}
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cine.jpg");
-  height: 65%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; 
-  clip-path: circle(50% at 50% 50%);
-}
-#containerT{
-  min-height: 4px;
-  position: relative;
-}
-#clock{
-  text-align: center;
-  font-size:15px;
-  background-color: transparent;
-  color: white;
-  position: absolute;
-  top: 75%;
-  left: 50%;
-}
-.accordion {
-  background-color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: solid;
-  text-align: center;
-  font-size: 18px;
-  transition: 0.5s;
-}
-.active, .accordion:hover {
-  background-color: #ccc; 
-}
-.panel {
-  padding: 0 18px;
-  display: none;
-  background-color: white;
-  overflow: hidden;
-}
-</style>
+            position: relative;
+            width: 100%;
+            max-width: 710px;
+            margin: 0 auto;
+        }
 
+        .topnav {
+            background-color: black;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .topnav a {
+            color: #f2f2f2;
+            padding: 15px 20px;
+            font-size: 16px; /* Adjust font size for smaller screens */
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+            gap: 10px;
+            background-color: black;
+            padding: 6px;
+        }
+
+        .grid-container > div {
+            background-color: white;
+            border: 2px solid black;
+            text-align: center;
+            box-shadow: 5px 5px 5px black;
+            padding: 10px;
+        }
+
+        .accordion {
+            background-color: black;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: solid;
+            text-align: center;
+            font-size: 18px;
+            transition: 0.5s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            max-width: 100px; /* Maintain image size */
+            cursor: pointer;
+            transition: .5s;
+        }
+
+        img:hover {
+            transform: scale(1.5);
+        }
+
+        footer {
+            background-color: limegreen;
+            padding: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
 <body>
-<div class="Banner" style="background-color: black"> A.A.Q </div>
-   
-<header><center><span class="wave">&#128075</span> <font size="+3">Welcome to Anthony's website!</font>
-    <p class="Bio"
-    style="display:inline-block;">
-    </p><img src="img.png" class="Anthony" alt="Anthony"></center></header>
-    
-      <div class="container">
-        <div class="topnav">
-          <a href="mailto:anthony.quinn@psych.ox.ac.uk">Email &#128231;</a>
-          <a href="https://twitter.com/_aq66">My X &#10060;</a>
-          <a href="https://www.researchgate.net/profile/Anthony-Quinn-4">ResearchGate &#128218;</a>
-          <a href="https://www.psych.ox.ac.uk/team/anthony-quinn">Institutional Profile &#128100;</a>
-          <a href="https://www.linkedin.com/in/anthony-quinn-24523329a/">LinkedIn &#9939; &nbsp;</a>
-        </div></div></div><br>
 
-        <center><font size="+2">This is my video of the month:</font></center><br>
-        <div class="hero-image"><br>
-          <center><iframe class="video2" width="710" height="295" src="https://www.youtube.com/embed/PYJ22-YYNW8?si=hBlCFUjh90azeZXv" 
-            style="padding:6px;border:1px;"
-            allowfullscreen></iframe></div>
+<div class="Banner">A.A.Q</div>
 
-       <button class="accordion">Shhh! &#129323; (you can click here for my previous videos of the month) &#8595;</button>
+<header>
+    <center>
+        <span class="wave">&#128075</span>
+        <span style="font-size: 1.5em;">Welcome to Anthony's website!</span>
+        <p class="Bio"></p>
+        <img src="img.png" class="Anthony" alt="Anthony">
+    </center>
+</header>
+
+<div class="container">
+    <div class="topnav">
+        <a href="mailto:anthony.quinn@psych.ox.ac.uk">Email &#128231;</a>
+        <a href="https://twitter.com/_aq66">My X &#10060;</a>
+        <a href="https://www.researchgate.net/profile/Anthony-Quinn-4">ResearchGate &#128218;</a>
+        <a href="https://www.psych.ox.ac.uk/team/anthony-quinn">Institutional Profile &#128100;</a>
+        <a href="https://www.linkedin.com/in/anthony-quinn-24523329a/">LinkedIn &#9939; &nbsp;</a>
+    </div>
+</div>
+
+<center><span style="font-size: 1.5em;">This is my video of the month:</span></center>
+<div class="hero-image">
+    <center>
+        <iframe class="video2" src="https://www.youtube.com/embed/PYJ22-YYNW8?si=hBlCFUjh90azeZXv" allowfullscreen></iframe>
+    </center>
+</div>
+
+<button class="accordion">Shhh! &#129323; (you can click here for my previous videos of the month) &#8595;</button>
 <div class="panel">
+    <div class="grid-container">
+        <div class="item"><iframe src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" frameborder="1" allowfullscreen></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="1" allowfullscreen></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="1" allowfullscreen></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" frameborder="1" allowfullscreen></iframe></div>
+        <div class="item"><iframe src="https://www.youtube.com/embed/o3eWeYKED78?si=9RYQRRCxsqT9gW4R" frameborder="1" allowfullscreen></iframe></div>
+    </div>
+</div>
 
-        <div class="grid-container">
-          <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" frameborder="1" allowfullscreen></iframe></div>
-          <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="1" allowfullscreen></iframe></div>
-          <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe></div>
-          <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="1" allowfullscreen></iframe></div>  
-          <div class="item">
-            <iframe width="500" height="250" src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" frameborder="1" allowfullscreen></iframe></div>
-            <div class="item">
-              <iframe width="500" height="250" src="https://www.youtube.com/embed/o3eWeYKED78?si=9RYQRRCxsqT9gW4R" frameborder="1" allowfullscreen></iframe></div></div></div>
-
-
-              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script>window.google={kEI:"Quz2S63qIYeglAfw8oHGCg",kEXPI:"17259,23663,24477,24661,24745,24770,24808",kCSI:{e:"17259,23663,24477,24661,24745,24770,24808",ei:"Quz2S63qIYeglAfw8oHGCg",expi:"17259,23663,24477,24661,24745,24770,24808"},ml:function(){},pageState:"#",kHL:"en",time:function(){return(new Date).getTime()},log:function(b,d,c){var a=new Image,e=google,g=e.lc,f=e.li;a.onerror=(a.onload=(a.onabort=function(){delete g[f]}));g[f]=a;c=c||"/gen_204?atyp=i&ct="+b+"&cad="+d+"&zx="+google.time();a.src=c;e.li=f+1},lc:[],li:0,j:{en:1,l:function(){},e:function(){},b:location.hash&&location.hash!="#",bv:3,pl:[],mc:0,sc:0.5},Toolbelt:{}};(function(){for(var d=0,c;c=["ad","bc","p","pa","zd","ac","pc","pah","ph","sa","xx","zc","zz"][d++];)(function(a){google.j[a]=function(){google.j.pl.push([a,arguments])}})(c)})();
-    window.google.sn="webhp";window.google.timers={load:{t:{start:(new Date).getTime()}}};try{window.google.pt=window.gtbExternal&&window.gtbExternal.pageT();}catch(u){}window.google.jsrt_kill=1; </script>
-
-<meta charset="utf-8">
-  <title>Digital Clock</title>
-  <link rel="stylesheet" href="website.css">
-  <script src="website.js"></script>
-
-  <div id="containerT">
-  <p id="clock"></p></div>
-<div class="Banner" style="background-color: black"> A.A.Q </div>
+<footer>A.A.Q</footer>
 
 <script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-  </script>
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            panel.style.display = panel.style.display === "block" ? "none" : "block";
+        });
+    }
+</script>
+
+</body>
+</html>
