@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>&#128522 Dr Anthony Quinn</title>
+    <title>&#128522; Dr Anthony Quinn</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
@@ -44,10 +44,10 @@
             text-align: right;
             background-color: black;
             padding: 6px 0;
-            position: fixed; /* Fixes the banner to the bottom */
+            position: fixed;
             left: 0;
             right: 0;
-            bottom: 0; /* Aligns to the bottom */
+            bottom: 0;
         }
 
         .Bio {
@@ -76,23 +76,10 @@
             text-align: center;
         }
 
-        .accordion {
-            background-color: black;
-            color: #f2f2f2;
-            font-size: 18px;
-            padding: 5px;
-            border-radius: 10px;
-            cursor: pointer;
-            width: 100%;
-            border: solid;
-            text-align: center;
-            transition: 0.5s;
-        }
-
         .topnav a {
             color: #f2f2f2;
             padding: 15px 20px;
-            font-size: 24px; /* Adjust font size for smaller screens */
+            font-size: 24px;
             text-decoration: none;
         }
 
@@ -103,7 +90,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 10px;
             background-color: black;
             padding: 6px;
@@ -130,7 +117,7 @@
 
         img {
             width: 50%;
-            max-width: 100px; /* Maintain image size */
+            max-width: 100px;
             cursor: pointer;
             transition: .5s;
         }
@@ -144,11 +131,56 @@
             padding: 4px;
             text-align: center;
         }
+
+        /* Carousel Styles */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            max-width: 750px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+
+        /* Navigation buttons */
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <div class="container1">
         <div class="topnav">
             <a href="mailto:anthony.quinn@psych.ox.ac.uk">Email &#128231; &nbsp; |</a>
             <a href="https://twitter.com/_aq66">My X &#10060; &nbsp; |</a>
@@ -160,49 +192,66 @@
 
 <header>
     <center>
-       
-        <span class="wave">&#128075</span>
+        <span class="wave">&#128075;</span>
         <span style="font-size: 2.0em;">Welcome to Anthony's website!</span>
         <img src="img.png" class="Anthony" alt="Anthony">
-        
         <p class="Bio"></p>
-        
     </center>
 </header><br><br>
 
-<center><span style="font-size: 1.5em;">This is my video of the month:</span></center><br>
+<center><span style="font-size: 1.5em;">This is my video of the month:</span></center><br><br>
 <div class="hero-image">
     <center>
         <iframe class="video2" src="https://www.youtube.com/embed/PYJ22-YYNW8?si=hBlCFUjh90azeZXv" allowfullscreen></iframe>
     </center>
 </div><br><br><br>
 
-<button class="accordion">click here for my previous videos of the month &#8595;</button>
-<div class="panel">
-    <div class="grid-container">
-        <div class="item"><iframe src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" frameborder="1" allowfullscreen></iframe></div>
-        <div class="item"><iframe src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="1" allowfullscreen></iframe></div>
-        <div class="item"><iframe src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="1" allowfullscreen></iframe></div>
-        <div class="item"><iframe src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="1" allowfullscreen></iframe></div>
-        <div class="item"><iframe src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" frameborder="1" allowfullscreen></iframe></div>
+<center><span style="font-size: 1.5em;">Here are my previous videos of the month:</span></center><br><br>
+
+<center>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+                <iframe src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
     </div>
-</div>
-
-<script src="script.js"></script>
-
-<script src="script.js"></script>
-</body>
+</center><br><<br>
 
 <div class="Banner2">A.A.Q 2024</div>
 
 <script>
-    var acc = document.getElementsByClassName("accordion");
-    for (var i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            panel.style.display = panel.style.display === "block" ? "none" : "block";
-        });
+    var slideIndex = 0;
+
+    function moveSlide(direction) {
+        const slides = document.querySelectorAll('.carousel-item');
+        slideIndex += direction;
+
+        if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+        }
+        if (slideIndex >= slides.length) {
+            slideIndex = 0;
+        }
+
+        const carousel = document.querySelector('.carousel');
+        carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
     }
 </script>
 
