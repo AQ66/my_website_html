@@ -176,9 +176,92 @@
         .next {
             right: 10px;
         }
+
+        /* Snow effect styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #1a1a1a; /* Dark background for contrast */
+            position: relative;
+        }
+
+        .snow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1000;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+
     </style>
 </head>
 <body>
+
+    <div class="snow"></div>
+
+    <script>
+        // Snow effect JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            const snowContainer = document.querySelector('.snow');
+            const numberOfSnowflakes = 100;
+
+            for (let i = 0; i < numberOfSnowflakes; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+
+                // Randomize snowflake size, speed, and initial position
+                snowflake.style.width = `${Math.random() * 10 + 5}px`; // Width between 5px and 15px
+                snowflake.style.height = snowflake.style.width;
+                snowflake.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+                snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`; // Random fall speed
+                snowflake.style.animationDelay = `${Math.random() * 5}s`; // Delay for staggered start
+
+                snowContainer.appendChild(snowflake);
+            }
+        });
+
+        // Carousel functionality
+        var slideIndex = 0;
+
+        function moveSlide(direction) {
+            const slides = document.querySelectorAll('.carousel-item');
+            slideIndex += direction;
+
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+
+            const carousel = document.querySelector('.carousel');
+            carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
+        }
+    </script>
 
     <div class="container1">
         <div class="topnav">
@@ -190,70 +273,51 @@
         </div>
     </div><br><br>
 
-<header>
+    <header>
+        <center>
+            <span class="wave">&#128075;</span>
+            <span style="font-size: 2.0em; color: white;">Welcome to Anthony's website!</span>
+            <img src="img.png" class="Anthony" alt="Anthony">
+            <p class="Bio"></p>
+        </center>
+    </header><br><br>
+
+    <center><span style="font-size: 1.5em; color: white;">This is my video of the month:</span></center><br><br>
+    <div class="hero-image">
+        <center>
+            <iframe class="video2" src="https://www.youtube.com/embed/PYJ22-YYNW8?si=hBlCFUjh90azeZXv" allowfullscreen></iframe>
+        </center>
+    </div><br><br><br>
+
+    <center><span style="font-size: 1.5em; color: white;">Here are my previous videos of the month:</span></center><br><br>
+
     <center>
-        <span class="wave">&#128075;</span>
-        <span style="font-size: 2.0em;">Welcome to Anthony's website!</span>
-        <img src="img.png" class="Anthony" alt="Anthony">
-        <p class="Bio"></p>
-    </center>
-</header><br><br>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="carousel-item">
+                    <iframe src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
 
-<center><span style="font-size: 1.5em;">This is my video of the month:</span></center><br><br>
-<div class="hero-image">
-    <center>
-        <iframe class="video2" src="https://www.youtube.com/embed/PYJ22-YYNW8?si=hBlCFUjh90azeZXv" allowfullscreen></iframe>
-    </center>
-</div><br><br><br>
-
-<center><span style="font-size: 1.5em;">Here are my previous videos of the month:</span></center><br><br>
-
-<center>
-    <div class="carousel-container">
-        <div class="carousel">
-            <div class="carousel-item">
-                <iframe src="https://www.youtube.com/embed/4c_xYLwOx-g" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="https://www.youtube.com/embed/11Ql_VDRKjY?si=3cUFatknboVeMiir" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="https://www.youtube.com/embed/4wPVVFv0-rs?si=Da26iShfFmG_rvLO" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="https://www.youtube.com/embed/1IFjXR3Tfq4?si=3u39M-cxuAzdfsWq" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div class="carousel-item">
-                <iframe src="https://www.youtube.com/embed/E479yto8pyk?si=J_WVaU9qBteMTxEc" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
+    </center><br><br>
 
-        <!-- Navigation Buttons -->
-        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-    </div>
-</center><br><<br>
-
-<div class="Banner2">A.A.Q 2024</div>
-
-<script>
-    var slideIndex = 0;
-
-    function moveSlide(direction) {
-        const slides = document.querySelectorAll('.carousel-item');
-        slideIndex += direction;
-
-        if (slideIndex < 0) {
-            slideIndex = slides.length - 1;
-        }
-        if (slideIndex >= slides.length) {
-            slideIndex = 0;
-        }
-
-        const carousel = document.querySelector('.carousel');
-        carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
-    }
-</script>
+    <div class="Banner2">A.A.Q 2024</div>
 
 </body>
 </html>
