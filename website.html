@@ -201,7 +201,9 @@
             border: 1px dotted #f07911;
             border-radius: 1px;
             padding: 10px;
-            inline-size: 666px;
+            width: 90%; /* Ensures box doesn't overflow */
+            max-width: 600px;
+            margin: 0 auto; /* Centers the box */
             overflow-wrap: break-word;
             text-align: left;
             text-indent: 45px;
@@ -232,8 +234,7 @@
             }
 
             .box {
-                width: 100%;
-                margin: 0 auto;
+                width: 90%;
             }
 
             .carousel-container {
@@ -367,3 +368,4 @@
 
 </body>
 </html>
+
