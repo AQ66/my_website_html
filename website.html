@@ -13,7 +13,7 @@
             font-family: 'Roboto', sans-serif;
             background: linear-gradient(to top, #f7c600, #ff8c00); /* Sunny gradient */
             height: 100vh;
-            color: black;
+            color: black; /* Text color to stand out against the sunny background */
             position: relative; /* So we can position the sun */
             overflow: hidden; /* Prevent body overflow caused by large image sizes */
         }
@@ -278,23 +278,6 @@
             }
         }
 
-        .scroll-down {
-            position: fixed;
-            bottom: 20px; /* Position it near the bottom */
-            left: 50%;
-            transform: translateX(-50%); /* Center it horizontally */
-            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .scroll-down:hover {
-            background-color: rgba(0, 0, 0, 0.9);
-        }
     </style>
 </head>
 <body>
@@ -322,14 +305,6 @@
 
             const carousel = document.querySelector('.carousel');
             carousel.style.transform = `translateX(-${slideIndex * 100}%)`;
-        }
-
-        // Scroll down function
-        function scrollDown() {
-            window.scrollTo({
-                top: window.innerHeight,  // Scroll down by one full screen height
-                behavior: 'smooth'        // Smooth scrolling
-            });
         }
     </script>
 
@@ -389,11 +364,7 @@
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
         </div>
     </center><br><br>
-
-    <button class="scroll-down" onclick="scrollDown()">Scroll Down &#8595;</button>
-    
     <div class="Banner2">A.A.Q 2025</div>
 
 </body>
 </html>
-
