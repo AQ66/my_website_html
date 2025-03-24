@@ -82,7 +82,7 @@
 
         .topnav {
             background-color: black;
-            font-size: 24px;
+            font-size: 18px;
             padding: 6px;
             text-align: center;
         }
@@ -90,7 +90,7 @@
         .topnav a {
             color: #f2f2f2;
             padding: 15px 20px;
-            font-size: 24px;
+            font-size: 18px;
             text-decoration: none;
         }
 
@@ -127,7 +127,7 @@
         }
 
         img {
-            width: 50%;
+            width: 100%;
             max-width: 100px;
             cursor: pointer;
             transition: .5s;
@@ -196,15 +196,86 @@
             background: linear-gradient(to top, #f4a261, #e76f51); /* Sand color gradient */
             clip-path: polygon(0% 100%, 20% 80%, 40% 100%, 60% 70%, 80% 90%, 100% 100%);
         }
+
         .box {
-  border: 1px dotted #f07911;
-  border-radius: 1px;
-  padding: 10px;
-  inline-size: 666px;
-  overflow-wrap: break-word;
-  text-align: left;
-  text-indent: 45px;
-}
+            border: 1px dotted #f07911;
+            border-radius: 1px;
+            padding: 10px;
+            inline-size: 666px;
+            overflow-wrap: break-word;
+            text-align: left;
+            text-indent: 45px;
+        }
+
+        /* Mobile responsiveness adjustments */
+        @media (max-width: 768px) {
+            .topnav a {
+                font-size: 16px;
+                padding: 12px 15px;
+            }
+
+            .sun {
+                width: 20vw;
+                height: 20vw;
+                max-width: 120px;
+                max-height: 120px;
+                left: 10%;
+            }
+
+            .Anthony {
+                width: 80px;
+                height: 80px;
+            }
+
+            .container1 {
+                padding: 0 10px;
+            }
+
+            .box {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .carousel-container {
+                max-width: 100%;
+                padding: 0 10px;
+            }
+
+            .carousel {
+                flex-direction: column;
+            }
+
+            iframe {
+                height: 200px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .topnav a {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            .sun {
+                width: 25vw;
+                height: 25vw;
+                max-width: 100px;
+                max-height: 100px;
+                left: 5%;
+            }
+
+            .box {
+                font-size: 1em;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
 
     </style>
 </head>
